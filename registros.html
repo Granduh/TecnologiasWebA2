@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Se define la compatibilidad con dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registro de Usuarios</title>
+    <!-- Se define la conexión a Bootstrap -->
+    <!-- Nota: La mayoría de la estilización se encuentra realizada con BootStrap y sus respectivas clases -->
+    <!-- La personalización de los elementos con las clases Bootstrap están definidos en el css correspondiente -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Se define el enlace al archivo de estilo CSS -->
+    <link href="styles/style-registro.css" rel="stylesheet">
+    <!-- Se define la conexión con el archivo dónde se establecieron los scripts para cada funcionalidad lógica -->
+    <script src="script-registros.js"></script>
+    <!-- Se define la conexión a los scripts de Bootstrap y sus dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- Se define la barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Se define el link a la página de inicio -->
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <!-- Se define un botón para colapsar el menú en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Se define el contenedor de los enlaces de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Se define el link a la página de funcionalidades lógicas -->
+                <li class="nav-item">
+                    <a class="nav-link" href="funcionalidades.html">Funcionalidades Lógicas</a>
+                </li>
+                <!-- Se define el link a la página de registro de usuarios -->
+                <li class="nav-item">
+                    <a class="nav-link" href="registros.html">Registro de Usuarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página de Registro de Usuarios -->
+    <div class="container mt-5">
+        <div class="card mt-4">
+            <div class="card-header">
+                <h1>Registro de Usuarios</h1>
+            </div>
+            <div class="card-body">
+                <!-- Formulario de registro de usuarios -->
+                <form id="formulario-registro">
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="text" class="form-control" id="id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cedula">Cédula de Identidad</label>
+                        <input type="text" class="form-control" id="cedula" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombres">Nombres y Apellidos</label>
+                        <input type="text" class="form-control" id="nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="fechaNacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad de Procedencia</label>
+                        <select class="form-control" id="ciudad" required>
+                            <option value="Quito">Quito</option>
+                            <option value="Guayaquil">Guayaquil</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Loja">Loja</option>
+                            <option value="SantoDomingo">Santo Domingo</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" formaction="mostrar-registros.html" formtarget="_blank">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    </body>
+    </html>

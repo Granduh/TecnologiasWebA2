@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Se define la compatibilidad con dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mostrar Registros</title>
+    <!-- Se define la conexión a Bootstrap -->
+    <!-- Nota: La mayoría de la estilización se encuentra realizada con BootStrap y sus respectivas clases -->
+    <!-- La personalización de los elementos con las clases Bootstrap están definidos en el css correspondiente -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Se define el enlace al archivo de estilo CSS -->
+    <link href="styles/style-mostrarregistros.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Se define la barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Se define el link a la página de inicio -->
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <!-- Se define un botón para colapsar el menú en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Se define el contenedor de los enlaces de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Se define el link a la página de funcionalidades lógicas -->
+                <li class="nav-item">
+                    <a class="nav-link" href="funcionalidades.html">Funcionalidades Lógicas</a>
+                </li>
+                <!-- Se define el link a la página de registro de usuarios -->
+                <li class="nav-item">
+                    <a class="nav-link" href="registros.html">Registro de Usuarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="card mt-4">
+            <div class="card-header">
+                <h1>Registro de Usuarios</h1>
+        <table id="tablaRegistros" class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cédula de Identidad</th>
+                    <th>Nombres y Apellidos</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Ciudad de Procedencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los registros se insertarán aquí -->
+            </tbody>
+        </table>
+            </div>
+        </div>
+
+
+
+
+    <div class="container mt-5">
+        
+    </div>
+
+</body>
+</html>
